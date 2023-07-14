@@ -1,29 +1,57 @@
 {
   "version": "0.1.0",
-  "name": "counter",
+  "name": "anchor_counter",
   "instructions": [
     {
       "name": "initialize",
       "accounts": [
-        { "name": "counter", "isMut": true, "isSigner": true },
-        { "name": "user", "isMut": true, "isSigner": true },
-        { "name": "systemProgram", "isMut": false, "isSigner": false }
+        {
+          "name": "counter",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
       ],
       "args": []
     },
     {
       "name": "increment",
       "accounts": [
-        { "name": "counter", "isMut": true, "isSigner": false },
-        { "name": "user", "isMut": false, "isSigner": true }
+        {
+          "name": "counter",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        }
       ],
       "args": []
     },
     {
       "name": "decrement",
       "accounts": [
-        { "name": "counter", "isMut": true, "isSigner": false },
-        { "name": "user", "isMut": false, "isSigner": true }
+        {
+          "name": "counter",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": false,
+          "isSigner": true
+        }
       ],
       "args": []
     }
@@ -33,8 +61,16 @@
       "name": "Counter",
       "type": {
         "kind": "struct",
-        "fields": [{ "name": "count", "type": "u64" }]
+        "fields": [
+          {
+            "name": "count",
+            "type": "u64"
+          }
+        ]
       }
     }
-  ]
+  ],
+  "metadata": {
+    "address": "CWrLG7by7VXJ7V4XZwGzErt1fGE8FXSRYZ2Wf4hx2Caa"
+  }
 }
